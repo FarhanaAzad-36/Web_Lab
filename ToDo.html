@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart To-Do List</title>
+  <link rel="stylesheet" href="ToDo.css">
+  <link rel="stylesheet" href="ToDo.js">
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h2>Smart To-Do List</h2>
+
+    <!-- INPUT FORM -->
+    <form id="taskForm" class="score-form">
+
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter Task..."
+        required
+      >
+
+      <select id="prioritySelect">
+        <option value="Complete">Complete</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Pending">Pending</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary">
+        + Add
+      </button>
+
+    </form>
+
+
+    <!-- STATISTICS -->
+    <div class="stat-bar">
+      <span>Total Tasks:</span>
+      <strong id="taskCount" class="text-accent">0</strong>
+    </div>
+
+
+    <!-- DYNAMIC TASK LIST -->
+    <ul id="taskList" class="records-list"></ul>
+
+  </div>
+
+
+  <script src="ToDo.js"></script>
+
+</body>
+</html>

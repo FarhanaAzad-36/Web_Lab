@@ -1,0 +1,317 @@
+/* =========================
+   1. CSS VARIABLES
+   ========================= */
+
+:root {
+    --paper: #f4f0e7;
+    --surface: #eee9dd;
+    --ink: #29241f;
+    --stone: #81786e;
+    --rule: #d4cbbb;
+    --green: #285b28;
+    --red: #a51e1e;
+    --tip-bg: #eef0e4;
+}
+
+
+/* =========================
+   2. UNIVERSAL RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   3. BODY
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--paper);
+    color: var(--ink);
+
+    max-width: 760px;
+    margin: 0 auto;
+
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   4. HEADER
+   ========================= */
+
+header {
+    background-color: var(--surface);
+
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+
+    padding: 20px;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+/* Brand name */
+
+.brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    font-weight: bold;
+
+    margin-bottom: 0;
+}
+
+.green {
+    color: var(--green);
+}
+
+.red {
+    color: var(--red);
+}
+
+.symbol {
+    color: var(--green);
+}
+
+
+/* Tagline */
+
+.tagline {
+    color: var(--green);
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Main title */
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    color: var(--stone);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 11px;
+    font-style: italic;
+}
+
+
+/* Recipe information */
+
+.recipe-info {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 12px;
+
+    color: var(--stone);
+
+    font-size: 9px;
+}
+
+
+/* =========================
+   5. HORIZONTAL LINE
+   ========================= */
+
+hr {
+    border: none;
+
+    border-top: 1px solid var(--rule);
+
+    margin: 18px 0;
+}
+
+
+/* =========================
+   6. MAIN CONTENT
+   ========================= */
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================
+   7. SECTIONS
+   ========================= */
+
+section {
+    background-color: var(--surface);
+
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+
+    padding: 15px 20px;
+}
+
+
+/* Section headings */
+
+section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    color: var(--red);
+
+    border-bottom: 1px solid var(--rule);
+
+    padding-bottom: 5px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Paragraph */
+
+section p {
+    font-size: 9px;
+}
+
+
+/* Important text */
+
+section p strong {
+    color: var(--green);
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   8. INGREDIENTS
+   ========================= */
+
+.ingredients {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+li {
+    font-size: 9px;
+
+    margin-bottom: 6px;
+}
+
+
+/* Sugar-free text */
+
+.sugar-free {
+    color: var(--red);
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   9. INSTRUCTIONS
+   ========================= */
+
+.instructions {
+    padding-left: 20px;
+}
+
+.instructions li {
+    padding-left: 4px;
+
+    margin-bottom: 8px;
+}
+
+
+/*  10. TIP BOX  */
+
+.tip {
+    background-color: var(--tip-bg);
+
+    border: 1px solid #a5ad8d;
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    margin-top: 12px;
+
+    font-size: 9px;
+}
+
+.tip strong {
+    color: var(--green);
+
+    font-size: 12px;
+}
+
+
+/*   11. NUTRITION   */
+
+.nutrition {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+/*   12. FOOTER    */
+
+footer {
+    text-align: center;
+
+    color: var(--stone);
+
+    font-size: 8px;
+
+    padding: 5px 0 10px;
+}
+
+.footer-brand {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 2px;
+}
+
+footer p {
+    color: var(--green);
+
+    font-size: 8px;
+
+    font-weight: bold;
+}

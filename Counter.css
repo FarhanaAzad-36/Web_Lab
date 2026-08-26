@@ -1,0 +1,76 @@
+/* 1. PAGE BODY */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 24px;
+  background: #F8F5EF;
+  color: #1D1A16;
+}
+
+/* 2. CARD CONTAINER */
+.card {
+  background: #FFFFFF;
+  border: 1px solid #D8D1C5;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 440px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-size: 1.15rem;
+  color: #7B3928;
+  margin-bottom: 10px;
+}
+
+/* 3. COUNTER DISPLAY */
+.big-counter {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin: 12px 0;
+  color: #fD1A16;
+  font-family: monospace;
+  transition: color 0.2s;
+}
+
+/* 4. BUTTON GROUP */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.btn-primary {
+  background: #7B3928;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background: #5a2a1c;
+}
+
+.btn-secondary {
+  background: #EFEAE0;
+  color: #1D1A16;
+}
+
+.btn-secondary:hover {
+  background: #dfd8cb;
+}
+
+.action-text {
+  font-size: 0.8rem;
+  color: #777777;
+  font-style: italic;
+}
