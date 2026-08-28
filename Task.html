@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKE BOX</title>
+    <link rel="stylesheet" href="Task.css">
+    <link rel="stylesheet" href="Task.js">
+</head>
+<body>
+    <header>
+        <div class="logo">CAKE BOX</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product-gallery">
+            <img id="main-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLjcv7aryhy830kpecOH3D7mXHmNIPcXQ5gmNw1EUo-aXdnBkjDXFHJk&s=10">
+            <div class="thumbnails">
+                <img onclick="changeImage('https://www.foodandwine.com/thmb/cUck29eCdcIEjx_r5Q5ReugKoNM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Fraiser-cake-FT-RECIPES0624-e9972b38ccb54d3ca8edbbb9a5bb1642.jpeg')" src="https://www.foodandwine.com/thmb/cUck29eCdcIEjx_r5Q5ReugKoNM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Fraiser-cake-FT-RECIPES0624-e9972b38ccb54d3ca8edbbb9a5bb1642.jpeg" alt="Thumbnail 1">
+                <img onclick="changeImage('https://i.ytimg.com/vi/uHE9Wixi8dU/maxresdefault.jpg')" src="https://i.ytimg.com/vi/uHE9Wixi8dU/maxresdefault.jpg" alt="Thumbnail 2">
+                <img onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt8HWA9X3hVHtyKT6hVcsfmOvgHJPCRkm0UUfo5LTUWZ1Ufr18HF5fljA&s=10')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt8HWA9X3hVHtyKT6hVcsfmOvgHJPCRkm0UUfo5LTUWZ1Ufr18HF5fljA&s=10" alt="Thumbnail 3">
+                <img onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLjcv7aryhy830kpecOH3D7mXHmNIPcXQ5gmNw1EUo-aXdnBkjDXFHJk&s=10')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLjcv7aryhy830kpecOH3D7mXHmNIPcXQ5gmNw1EUo-aXdnBkjDXFHJk&s=10" alt="Thumbnail 4">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Strawberry Cream Cake</h1>
+            <p class="brand">CAKE BOX</p>
+            <p class="price">
+                <span class="current-price">TK1,500</span>
+                <span class="old-price">TK2,000</span>
+                <span class="discount">25% OFF</span>
+            </p>
+            <p class="description">
+                A soft and delicious strawberry cream cake made
+                with fresh strawberries, smooth cream and a soft
+                vanilla sponge.
+            </p>
+            
+            <!-- Ratings Section -->
+            <div class="ratings">
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <p>Rated 4.5/5 (123 reviews)</p>
+            </div>
+            
+            <div class="quantity-selector">
+                <button onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            <!-- Promotional Section -->
+            <div class="promotion">
+                <h3>Special Offer!</h3>
+                <p>Get 5% off on your first cake order.
+                    Sign up and enjoy our special offer.</p>
+                <button class="promo-btn">Sign Up Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 cake box.</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+
+        function increaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+    </script>
+</body>
+</html>
