@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPage</title>
+  <link rel="stylesheet" href="WeatherPage.css">
+</head>
+<body>
+
+  <div class="weather-card">
+
+    <header class="card-header">
+
+      <form id="searchForm" class="search-form">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Search city..."
+          value="Dubai"
+          required
+        >
+        <button type="submit" id="searchBtn">Search</button>
+      </form>
+
+      <!-- UNIT TOGGLE BUTTON -->
+      <button
+        id="unitToggle"
+        class="unit-btn"
+        title="Click to toggle Centigrade / Kelvin"
+      >
+        °C
+      </button>
+
+    </header>
+
+
+    <section class="hero-card">
+
+      <div class="hero-left">
+
+        <h2 id="cityName" class="city-title">Dubai</h2>
+
+        <p id="cityCountry" class="country-subtitle">
+          United Arab Emirates
+        </p>
+
+        <div class="temp-wrap">
+          <span id="currentTemp" class="main-temp">38</span>
+
+          <span id="unitDisplay" class="temp-unit">
+            °C
+          </span>
+        </div>
+
+        <p id="weatherDesc" class="weather-condition">
+          Clear Sky
+        </p>
+
+      </div>
+
+      <div class="hero-right">
+        <div id="weatherIcon" class="weather-large-icon">
+          ☀️
+        </div>
+      </div>
+
+    </section>
+
+
+    <h3 class="forecast-heading">
+      5-Day Forecast
+    </h3>
+
+    <div
+      class="forecast-grid"
+      id="forecastGrid">
+    </div>
+
+  </div>
+
+  <script src="WeatherPage.js"></script>
+
+</body>
+</html>

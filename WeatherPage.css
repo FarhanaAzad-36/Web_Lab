@@ -1,0 +1,172 @@
+/* Step 8: Unit Toggle Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  padding: 24px;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-card {
+  width: 100%;
+  max-width: 520px;
+
+  background: rgba(30, 41, 59, 0.85);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.search-form input {
+  flex: 1;
+
+  padding: 10px 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.search-form button {
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.unit-btn {
+  padding: 10px 14px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 14px;
+
+  padding: 25px;
+
+  margin-bottom: 25px;
+}
+
+.city-title {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.country-subtitle {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.temp-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-temp {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.temp-unit {
+  font-size: 22px;
+  margin-top: 8px;
+  margin-left: 4px;
+}
+
+.weather-condition {
+  color: #cbd5e1;
+}
+
+.weather-large-icon {
+  font-size: 65px;
+}
+
+
+/* FORECAST */
+
+.forecast-heading {
+  margin-bottom: 12px;
+}
+
+.forecast-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 8px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 10px;
+
+  padding: 12px;
+
+  text-align: center;
+}
+
+.forecast-card .day {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.forecast-card .icon {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.forecast-card .temp {
+  font-size: 14px;
+}
