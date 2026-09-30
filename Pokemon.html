@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API Card</title>
+    <link rel="stylesheet" href="Pokemon.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Pokémon</h1>
+        <p class="subtitle">Search for a Pokémon and see its API data.</p>
+
+        <form id="searchForm" class="search-form">
+            <input
+                type="text"
+                id="pokemonInput"
+                placeholder="Enter Pokémon name..."
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="quick-search">
+            <span>Quick Search:</span>
+            <button type="button" class="quick-btn" data-pokemon="pikachu">Pikachu</button>
+            <button type="button" class="quick-btn" data-pokemon="bulbasaur">Bulbasaur</button>
+            <button type="button" class="quick-btn" data-pokemon="blastoise">Blastoise</button>
+            <button type="button" class="quick-btn" data-pokemon="mewtwo">Mewtwo</button>
+            <button type="button" class="quick-btn" data-pokemon="gengar">Gengar</button>
+            <button type="button" class="quick-btn" data-pokemon="snorlax">Snorlax</button>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div id="pokemonCard" class="pokemon-card">
+            <div class="card-top">
+                <div>
+                    <h2 id="pokemonName">Pikachu</h2>
+                    <p id="pokemonId">#0025</p>
+                </div>
+                <div id="types" class="types"></div>
+            </div>
+
+            <div class="pokemon-image-box">
+                <img id="pokemonImage" src="" alt="Pokémon artwork">
+            </div>
+
+            <div class="basic-info">
+                <div>
+                    <span>Height</span>
+                    <strong id="height">-</strong>
+                </div>
+                <div>
+                    <span>Weight</span>
+                    <strong id="weight">-</strong>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Base Stats</h3>
+                <div id="stats" class="stats"></div>
+            </div>
+
+            <div class="section">
+                <h3>Abilities</h3>
+                <div id="abilities" class="abilities"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Pokemon.js"></script>
+</body>
+</html>
